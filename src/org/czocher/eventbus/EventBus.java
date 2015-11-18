@@ -91,7 +91,7 @@ public class EventBus {
                 }
             }
         } else {
-            LOGGER.log(Level.WARNING, "No subscriber for event type {0}.", event.getClass());
+            LOGGER.log(Level.WARNING, "No subscriber for event type {0} found.", event.getClass());
         }
     }
 }
