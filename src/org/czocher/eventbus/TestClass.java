@@ -1,5 +1,7 @@
 package org.czocher.eventbus;
 
+import java.util.ArrayList;
+
 public class TestClass {
     
     public static void main(String[] args) {
@@ -7,6 +9,7 @@ public class TestClass {
         TestClass t = new TestClass();
         e.register(t);
         e.post("Testowy event");
+        e.post(new ArrayList());
         e.uneregister(t);
     }
     

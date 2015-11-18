@@ -90,6 +90,8 @@ public class EventBus {
                     LOGGER.log(Level.SEVERE, null, ex);
                 }
             }
+        } else {
+            LOGGER.log(Level.WARNING, "No subscriber for event type {0}.", event.getClass());
         }
     }
 }
